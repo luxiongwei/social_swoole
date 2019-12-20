@@ -1,0 +1,12 @@
+version: "2"
+
+services:
+        social_swoole: 
+                image: social/swoole:v2
+                tty: true
+                ports:
+                 - "9511:9501"
+                 - "9512:9502"
+                 - "9513:9503"
+                volumes:
+                 - "/home/wwwroot:/home/wwwroot"

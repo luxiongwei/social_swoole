@@ -1,0 +1,9 @@
+[supervisord]
+nodaemon=true
+
+[program:redisd]
+command=/usr/bin/redis-server /etc/redis.conf
+
+[program:easyswooled]
+directory=/home/wwwroot/adnonstop-social-swoole/
+command=php easyswoole start produce d
